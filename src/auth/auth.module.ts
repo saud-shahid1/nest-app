@@ -14,6 +14,10 @@ import { User, UserSchema } from './schemas/user.schema';
   providers: [AuthService],
 })
 export class AuthModule {
+
+
+
+  
   configure(consumer: MiddlewareConsumer) {
     consumer
       .apply(JwtMiddleware)
